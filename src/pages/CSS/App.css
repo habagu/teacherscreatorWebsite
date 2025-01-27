@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.navbarbutton {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 50px; /* Set the width of the button */
+  height: 50px; /* Set the height of the button */
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbarbuttonimage {
+  width: 45px; /* Set the width of the image */
+  height: 45px; /* Set the height of the image */
+}
+
+.navbarbutton:hover {
+  background-color: #555; /* Change background color on hover */
+}

@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column; /* Change to column direction */
+  align-items: flex-start; /* Align items to the left */
+  background-color: #333;
+  padding: 1rem;
+  height: 100vh; /* Make the navbar take the full height of the viewport */
+  width: 10vw; /* Set a fixed width for the navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 100vw; /* Set the navbar width to 100% of the viewport width on mobile */
+  }
+}
+
+.navbar-logo {
+  margin-bottom: 1rem; /* Add some space between the logo and the links */
+}
+
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Change to column direction */
+  gap: 2.5rem; /* Adjust gap between links */
+  text-align: left; /* Align text to the left */
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar-links li a:hover {
+  text-decoration: underline;
+}
